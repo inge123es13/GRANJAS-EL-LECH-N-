@@ -4,172 +4,29 @@
 <meta charset="UTF-8">
 <title>Granja El Lechón 🐷</title>
 <style>
-  body {
-    font-family: 'Comic Sans MS', Arial, sans-serif;
-    background: #fff0e0;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    overflow-x: hidden;
-  }
-
-  header {
-    background: #f28c8c;
-    padding: 20px;
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    text-shadow: 2px 2px #b34747;
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-    40% {transform: translateY(-15px);}
-    60% {transform: translateY(-7px);}
-  }
-
-  .form-container {
-    background: #ffd6cc;
-    padding: 20px;
-    border-radius: 15px;
-    width: 90%;
-    max-width: 500px;
-    margin: 20px auto;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    text-align: left;
-    animation: fadeIn 1s ease-in-out;
-  }
-
-  label {
-    font-weight: bold;
-    display: block;
-    margin: 10px 0 5px;
-  }
-
-  input[type="text"], input[type="date"], input[type="file"], select {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 2px solid #f28c8c;
-    border-radius: 10px;
-  }
-
-  button {
-    background: #f28c8c;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1em;
-    margin: 2px;
-    transition: transform 0.3s, background 0.3s;
-  }
-
-  button:hover {
-    background: #b34747;
-    transform: scale(1.1);
-  }
-
-  table {
-    width: 95%;
-    margin: 20px auto;
-    border-collapse: collapse;
-    background: #fff5f5;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    border-radius: 10px;
-    animation: fadeIn 1.2s ease-in-out;
-  }
-
-  th, td {
-    border: 2px solid #f28c8c;
-    padding: 10px;
-    text-align: center;
-    transition: background 0.3s;
-  }
-
-  th {
-    background: #f28c8c;
-    color: white;
-    font-size: 1.1em;
-  }
-
-  tr:nth-child(even) {
-    background: #ffe0d6;
-  }
-
-  tr:hover td {
-    background: #ffd1c1;
-  }
-
-  .empleado-mes {
-    background: #ffe0e0;
-    padding: 20px;
-    border-radius: 15px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 600px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    animation: fadeIn 1.5s ease-in-out;
-  }
-
-  .empleado-mes h2 {
-    color: #b34747;
-    text-shadow: 1px 1px #f28c8c;
-  }
-
-  .fotos-empleado {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .fotos-empleado div {
-    position: relative;
-    margin: 10px;
-  }
-
-  .fotos-empleado img {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 10px;
-    border: 2px solid #f28c8c;
-    transition: transform 0.5s, box-shadow 0.5s;
-    animation: float 3s ease-in-out infinite alternate;
-  }
-
-  .fotos-empleado img:hover {
-    transform: rotate(-5deg) scale(1.2) translateY(-5px);
-    box-shadow: 0 0 15px #f28c8c;
-  }
-
-  .fotos-empleado button {
-    position: absolute;
-    top: -5px;
-    right: -5px;
-    background: #e63946;
-    border: none;
-    border-radius: 50%;
-    padding: 5px 7px;
-    cursor: pointer;
-    font-size: 0.9em;
-    color: white;
-  }
-
-  .fotos-empleado button:hover {
-    background: #b34747;
-  }
-
-  @keyframes fadeIn {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
-  }
-
-  @keyframes float {
-    0% {transform: translateY(0);}
-    100% {transform: translateY(-10px);}
-  }
+  body { font-family: 'Comic Sans MS', Arial, sans-serif; background:#fff0e0; margin:0; padding:0; text-align:center; overflow-x:hidden;}
+  header { background:#f28c8c; padding:20px; color:white; font-size:2em; font-weight:bold; text-shadow:2px 2px #b34747; animation:bounce 2s infinite;}
+  @keyframes bounce {0%,20%,50%,80%,100%{transform:translateY(0);}40%{transform:translateY(-15px);}60%{transform:translateY(-7px);}}
+  .form-container { background:#ffd6cc; padding:20px; border-radius:15px; width:90%; max-width:500px; margin:20px auto; box-shadow:0 0 15px rgba(0,0,0,0.2); animation:fadeIn 1s;}
+  label { font-weight:bold; display:block; margin:10px 0 5px; }
+  input[type=text], input[type=date], input[type=file], select { width:100%; padding:10px; margin-bottom:15px; border:2px solid #f28c8c; border-radius:10px; }
+  button { background:#f28c8c; color:white; padding:10px 15px; border:none; border-radius:10px; cursor:pointer; font-size:1em; margin:2px; transition: transform 0.3s, background 0.3s; }
+  button:hover { background:#b34747; transform: scale(1.1); }
+  table { width:95%; margin:20px auto; border-collapse:collapse; background:#fff5f5; box-shadow:0 0 15px rgba(0,0,0,0.2); border-radius:10px; animation:fadeIn 1.2s;}
+  th, td { border:2px solid #f28c8c; padding:10px; text-align:center; transition:background 0.3s; }
+  th { background:#f28c8c; color:white; font-size:1.1em; }
+  tr:nth-child(even){background:#ffe0d6;}
+  tr:hover td{background:#ffd1c1;}
+  .empleado-mes { background:#ffe0e0; padding:20px; border-radius:15px; margin:20px auto; width:90%; max-width:600px; box-shadow:0 0 15px rgba(0,0,0,0.2); animation:fadeIn 1.5s;}
+  .empleado-mes h2 { color:#b34747; text-shadow:1px 1px #f28c8c; }
+  .fotos-empleado { display:flex; flex-wrap:wrap; justify-content:center; }
+  .fotos-empleado div { position:relative; margin:10px; }
+  .fotos-empleado img { max-width:150px; max-height:150px; border-radius:10px; border:2px solid #f28c8c; transition:transform 0.5s, box-shadow 0.5s; animation:float 3s ease-in-out infinite alternate;}
+  .fotos-empleado img:hover { transform:rotate(-5deg) scale(1.2) translateY(-5px); box-shadow:0 0 15px #f28c8c; }
+  .fotos-empleado button { position:absolute; top:-5px; right:-5px; background:#e63946; border:none; border-radius:50%; padding:5px 7px; cursor:pointer; font-size:0.9em; color:white; }
+  .fotos-empleado button:hover { background:#b34747; }
+  @keyframes fadeIn { from {opacity:0; transform:translateY(20px);} to {opacity:1; transform:translateY(0);} }
+  @keyframes float { 0%{transform:translateY(0);}100%{transform:translateY(-10px);} }
 </style>
 </head>
 <body>
@@ -177,15 +34,12 @@
 <header>🐖 Granja El Lechón</header>
 
 <div class="form-container">
-  <label for="nombre">Nombre del puerco:</label>
+  <label>Nombre del puerco:</label>
   <input type="text" id="nombre" placeholder="Ej. La Chata">
-
-  <label for="diaMonta">Día de monta:</label>
+  <label>Día de monta:</label>
   <input type="date" id="diaMonta">
-
   <button onclick="agregarPuerco()">Agregar</button>
-
-  <label for="ordenTabla">Ordenar tabla:</label>
+  <label>Ordenar tabla:</label>
   <select id="ordenTabla" onchange="mostrarTabla()">
     <option value="antiguos">Más antiguos primero</option>
     <option value="recientes">Más recientes primero</option>
@@ -199,211 +53,126 @@
       <th>Día de Monta</th>
       <th>Revisión de Monta</th>
       <th>Fecha de Parto</th>
-      <th>Próximo Celo (post-lechones)</th>
+      <th>Próximo Celo</th>
       <th>Acciones</th>
     </tr>
   </thead>
-  <tbody id="tablaPuerkos">
-  </tbody>
+  <tbody id="tablaPuerkos"></tbody>
 </table>
 
 <div class="empleado-mes">
   <h2>🐷 Empleado del Mes</h2>
   <input type="file" id="fotoEmpleado" accept="image/*">
   <button onclick="agregarFotoEmpleado()">Agregar Foto</button>
-  <div class="fotos-empleado" id="fotosEmpleado">
-    <!-- Fotos iniciales: tim.jpg y miche.jpg -->
-  </div>
+  <div class="fotos-empleado" id="fotosEmpleado"></div>
 </div>
 
-<script>
-let listaPuercos = [];
-let fotosEmpleado = [];
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, getDocs, doc, deleteDoc, updateDoc } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore.js";
+  import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-storage.js";
 
-// Inicializar fecha y cargar datos
-document.addEventListener("DOMContentLoaded", function(){
-  document.getElementById("diaMonta").value = new Date().toISOString().split("T")[0];
-  cargarDatos();
-  cargarFotosEmpleado();
-
-  // Inicializar fotos con tim.jpg y miche.jpg si no hay fotos guardadas
-  if(localStorage.getItem("fotosEmpleado") === null){
-    fotosEmpleado = ["tim.jpg", "miche.jpg"];
-    guardarFotosEmpleado();
-    mostrarFotosEmpleado();
-  }
-});
-
-// Funciones de fechas
-function sumarDias(fecha, dias) {
-  let nuevaFecha = new Date(fecha);
-  nuevaFecha.setDate(nuevaFecha.getDate() + dias);
-  return nuevaFecha;
-}
-
-function formatearFecha(fecha) {
-  return fecha.toLocaleDateString('es-ES', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
-}
-
-// Puercos
-function agregarPuerco() {
-  let nombre = document.getElementById('nombre').value.trim();
-  let diaMonta = document.getElementById('diaMonta').value;
-
-  if (!nombre || !diaMonta) {
-    alert("Por favor ingresa el nombre y día de monta.");
-    return;
-  }
-
-  let fechaMonta = new Date(diaMonta + "T00:00:00");
-  let revisionMonta = sumarDias(fechaMonta, 18); 
-  let fechaParto = sumarDias(fechaMonta, 114);
-  let proximoCeloPostLechones = sumarDias(fechaParto, 26);
-
-  listaPuercos.push({
-    nombre: nombre,
-    diaMonta: formatearFecha(fechaMonta),
-    revision: formatearFecha(revisionMonta),
-    parto: formatearFecha(fechaParto),
-    proximoCelo: formatearFecha(proximoCeloPostLechones)
-  });
-
-  guardarDatos();
-  mostrarTabla();
-
-  document.getElementById('nombre').value = "";
-  document.getElementById('diaMonta').value = new Date().toISOString().split("T")[0];
-}
-
-function mostrarTabla() {
-  const orden = document.getElementById('ordenTabla').value;
-
-  listaPuercos.sort((a, b) => {
-    let fechaA = new Date(a.diaMonta.split(' ')[2] + '-' +
-                          obtenerNumeroMes(a.diaMonta.split(' ')[4]) + '-' +
-                          a.diaMonta.split(' ')[1]);
-    let fechaB = new Date(b.diaMonta.split(' ')[2] + '-' +
-                          obtenerNumeroMes(b.diaMonta.split(' ')[4]) + '-' +
-                          b.diaMonta.split(' ')[1]);
-    return orden === "antiguos" ? fechaA - fechaB : fechaB - fechaA;
-  });
-
-  let tabla = document.getElementById('tablaPuerkos');
-  tabla.innerHTML = "";
-  listaPuercos.forEach((p, index) => {
-    tabla.innerHTML += `<tr>
-      <td>${p.nombre}</td>
-      <td>${p.diaMonta}</td>
-      <td>${p.revision}</td>
-      <td>${p.parto}</td>
-      <td>${p.proximoCelo}</td>
-      <td>
-        <button onclick="actualizarPuerco(${index})">Actualizar</button>
-        <button onclick="eliminarPuerco(${index})" style="background:#e63946;">Eliminar</button>
-      </td>
-    </tr>`;
-  });
-}
-
-function obtenerNumeroMes(nombreMes) {
-  const meses = {
-    enero: 0, febrero: 1, marzo: 2, abril: 3, mayo: 4, junio: 5,
-    julio: 6, agosto: 7, septiembre: 8, octubre: 9, noviembre: 10, diciembre: 11
+  const firebaseConfig = {
+    apiKey: "AIzaSyDMnIdtiIvUYP6e68hTCG8XFDzEUz9TT80",
+    authDomain: "granja-71b1b.firebaseapp.com",
+    projectId: "granja-71b1b",
+    storageBucket: "granja-71b1b.appspot.com",
+    messagingSenderId: "93657318490",
+    appId: "1:93657318490:web:31aa06cd5cc23894ac4463",
+    measurementId: "G-SG7MDJRJX8"
   };
-  return meses[nombreMes.toLowerCase()] || 0;
-}
 
-function actualizarPuerco(index) {
-  let nuevaFecha = prompt("Ingresa la nueva fecha de monta (YYYY-MM-DD):");
-  if (!nuevaFecha) return;
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+  const storage = getStorage(app);
 
-  let fechaMonta = new Date(nuevaFecha + "T00:00:00");
-  if (isNaN(fechaMonta)) {
-    alert("Fecha inválida. Usa el formato YYYY-MM-DD.");
-    return;
+  function sumarDias(fecha, dias){ let f=new Date(fecha); f.setDate(f.getDate()+dias); return f; }
+  function formatearFecha(fecha){ return new Date(fecha).toLocaleDateString('es-ES', { weekday:'long', day:'numeric', month:'long', year:'numeric' }); }
+
+  // --- PUERCOS ---
+  async function agregarPuerco(){
+    let nombre=document.getElementById('nombre').value.trim();
+    let diaMonta=document.getElementById('diaMonta').value;
+    if(!nombre || !diaMonta){ alert("Completa todos los campos"); return; }
+    let fechaMonta=new Date(diaMonta+"T00:00:00");
+    let revision=sumarDias(fechaMonta,18);
+    let parto=sumarDias(fechaMonta,114);
+    let proximoCelo=sumarDias(parto,26);
+    await addDoc(collection(db,"puercos"), {nombre,diaMonta:fechaMonta.toISOString(),revision:revision.toISOString(),parto:parto.toISOString(),proximoCelo:proximoCelo.toISOString()});
+    mostrarTabla();
+    document.getElementById('nombre').value="";
+    document.getElementById('diaMonta').value=new Date().toISOString().split("T")[0];
   }
 
-  listaPuercos[index].diaMonta = formatearFecha(fechaMonta);
-  listaPuercos[index].revision = formatearFecha(sumarDias(fechaMonta, 18));
-  listaPuercos[index].parto = formatearFecha(sumarDias(fechaMonta, 114));
-  listaPuercos[index].proximoCelo = formatearFecha(sumarDias(fechaMonta, 26));
+  async function mostrarTabla(){
+    const orden=document.getElementById('ordenTabla').value;
+    let snapshot=await getDocs(collection(db,"puercos"));
+    let datos=snapshot.docs.map(d=>({id:d.id,...d.data()}));
+    datos.sort((a,b)=>orden==='antiguos'?new Date(a.diaMonta)-new Date(b.diaMonta):new Date(b.diaMonta)-new Date(a.diaMonta));
+    const tabla=document.getElementById('tablaPuerkos');
+    tabla.innerHTML="";
+    datos.forEach(p=>{
+      tabla.innerHTML+=`<tr>
+        <td>${p.nombre}</td>
+        <td>${formatearFecha(p.diaMonta)}</td>
+        <td>${formatearFecha(p.revision)}</td>
+        <td>${formatearFecha(p.parto)}</td>
+        <td>${formatearFecha(p.proximoCelo)}</td>
+        <td>
+          <button onclick="actualizarPuerco('${p.id}')">Actualizar</button>
+          <button onclick="eliminarPuerco('${p.id}')" style="background:#e63946;">Eliminar</button>
+        </td>
+      </tr>`;
+    });
+  }
 
-  guardarDatos();
-  mostrarTabla();
-}
-
-function eliminarPuerco(index) {
-  if (confirm(`¿Eliminar al puerco "${listaPuercos[index].nombre}"?`)) {
-    listaPuercos.splice(index, 1);
-    guardarDatos();
+  async function eliminarPuerco(id){ if(confirm("Eliminar puerco?")){ await deleteDoc(doc(db,"puercos",id)); mostrarTabla(); } }
+  async function actualizarPuerco(id){
+    let nuevaFecha=prompt("Nueva fecha de monta (YYYY-MM-DD):");
+    if(!nuevaFecha) return;
+    let fechaMonta=new Date(nuevaFecha+"T00:00:00");
+    if(isNaN(fechaMonta)){ alert("Fecha inválida"); return; }
+    await updateDoc(doc(db,"puercos",id),{
+      diaMonta:fechaMonta.toISOString(),
+      revision:sumarDias(fechaMonta,18).toISOString(),
+      parto:sumarDias(fechaMonta,114).toISOString(),
+      proximoCelo:sumarDias(sumarDias(fechaMonta,114),26).toISOString()
+    });
     mostrarTabla();
   }
-}
 
-function guardarDatos() {
-  localStorage.setItem("puercos", JSON.stringify(listaPuercos));
-}
-
-function cargarDatos() {
-  let datos = localStorage.getItem("puercos");
-  if (datos) {
-    listaPuercos = JSON.parse(datos);
-    mostrarTabla();
-  }
-}
-
-// Empleado del mes
-function agregarFotoEmpleado() {
-  let input = document.getElementById('fotoEmpleado');
-  if (input.files && input.files[0]) {
-    let reader = new FileReader();
-    reader.onload = function(e) {
-      fotosEmpleado.push(e.target.result);
-      guardarFotosEmpleado();
+  // --- EMPLEADO DEL MES ---
+  async function agregarFotoEmpleado(){
+    let input=document.getElementById('fotoEmpleado');
+    if(input.files && input.files[0]){
+      let file=input.files[0];
+      let fileRef=ref(storage,'empleados/'+file.name);
+      await uploadBytes(fileRef,file);
+      let url=await getDownloadURL(fileRef);
+      await addDoc(collection(db,"fotosEmpleado"),{url});
       mostrarFotosEmpleado();
     }
-    reader.readAsDataURL(input.files[0]);
   }
-}
 
-function mostrarFotosEmpleado() {
-  let cont = document.getElementById('fotosEmpleado');
-  cont.innerHTML = "";
-  fotosEmpleado.forEach((f, index) => {
-    let div = document.createElement("div");
-    let img = document.createElement("img");
-    img.src = f;
+  async function mostrarFotosEmpleado(){
+    let cont=document.getElementById('fotosEmpleado');
+    cont.innerHTML="";
+    let snapshot=await getDocs(collection(db,"fotosEmpleado"));
+    snapshot.docs.forEach(docItem=>{
+      let f=docItem.data();
+      let div=document.createElement("div");
+      let img=document.createElement("img"); img.src=f.url;
+      let btn=document.createElement("button"); btn.textContent="X";
+      btn.onclick=async()=>{await deleteDoc(doc(db,"fotosEmpleado",docItem.id)); mostrarFotosEmpleado();}
+      div.appendChild(img); div.appendChild(btn); cont.appendChild(div);
+    });
+  }
 
-    let btn = document.createElement("button");
-    btn.textContent = "X";
-    btn.onclick = function(){ eliminarFotoEmpleado(index); };
-
-    div.appendChild(img);
-    div.appendChild(btn);
-    cont.appendChild(div);
+  document.addEventListener("DOMContentLoaded", ()=>{
+    document.getElementById('diaMonta').value=new Date().toISOString().split("T")[0];
+    mostrarTabla(); mostrarFotosEmpleado();
   });
-}
 
-function eliminarFotoEmpleado(index) {
-  if (confirm("¿Eliminar esta foto del empleado del mes?")) {
-    fotosEmpleado.splice(index, 1);
-    guardarFotosEmpleado();
-    mostrarFotosEmpleado();
-  }
-}
-
-function guardarFotosEmpleado() {
-  localStorage.setItem("fotosEmpleado", JSON.stringify(fotosEmpleado));
-}
-
-function cargarFotosEmpleado() {
-  let datos = localStorage.getItem("fotosEmpleado");
-  if (datos) {
-    fotosEmpleado = JSON.parse(datos);
-    mostrarFotosEmpleado();
-  }
-}
 </script>
-
 </body>
 </html>
